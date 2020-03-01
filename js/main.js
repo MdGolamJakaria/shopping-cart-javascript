@@ -9,6 +9,13 @@ plusButton.addEventListener("click", function(){
 
   const showQuantityplus = plusQuantityNumber + 1;
   document.getElementById("item").value = showQuantityplus;
+
+  const iphonePrice = document.getElementById("iphone-price").innerText;
+      const priceamount = parseFloat(iphonePrice);
+
+      const totalPrice = document.getElementById("iphone-price").innerText = showQuantityplus * priceamount;
+
+      iphonePrice= totalPrice;
 })
 
 
@@ -23,13 +30,17 @@ minusButton.addEventListener("click",function(){
   const showQuantityMinus = minusQuantityNumber -1 ;
   document.getElementById("item").value = showQuantityMinus;
 
+  
 })
 
-//////////////// product price with quantity 
 
-const iphonePrice = document.getElementById("iphone-price").innerText;
-const priceamount = parseFloat(iphonePrice);
+//function
 
-priceWithProduct.innerText = showQuantityplus*priceamount;
+function updatePrice(){
+  const iphonePrice = document.getElementById("iphone-price").innerText;
+  const priceamount = parseFloat(iphonePrice);
 
-console.log(priceWithProduct);
+  const totalPrice = document.getElementById("iphone-price").innerText = showQuantityplus * priceamount;
+
+  iphonePrice= totalPrice;
+}
