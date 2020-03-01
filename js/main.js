@@ -30,4 +30,6 @@ minusButton.addEventListener("click",function(){
 const iphonePrice = document.getElementById("iphone-price").innerText;
 const priceamount = parseFloat(iphonePrice);
 
-const priceWithProduct.innerText = showQuantityplus*priceamount;
+priceWithProduct.innerText = showQuantityplus*priceamount;
+
+console.log(priceWithProduct);
